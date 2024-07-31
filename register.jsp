@@ -19,13 +19,15 @@
         <input type="password" name="password" placeholder="Password" required>
         <select name="userType" required>
             <option value="" disabled selected>Select User Type</option>
-            <option value="Retail">Retailer</option>
-            <option value="Standard">Consumer</option>
-            <option value="Charity">Charitable Organization</option>
+            <option value="Retail">Retail</option>
+            <option value="Standard">Standard</option>
+            <option value="Charity">Charity</option>
         </select>
+        
+        <input type="text" name="joinDate" placeholder="Date" required>
         <textarea name="foodPreferences" placeholder="Food Preferences"></textarea>
         <div>
-            <label>Suscribe to alerts:</label>
+            <label>Subscribe to alerts:</label>
             <input type="radio" name="subscribe" value="Yes" id="subscribe-yes">
             <label for="subscribe-yes">Yes</label>
             <input type="radio" name="subscribe" value="No" id="subscribe-no">
