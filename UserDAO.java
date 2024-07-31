@@ -19,7 +19,7 @@ import enums.UserType;
 public class UserDAO {
 	
 public boolean addUser(UserDTO user) {
-	String sql = "INSERT INTO user (userId, firstName, lastName, userPassword, userEmail, joinDate, userType) VALUES (?, ?, ?, ?, ?, ?, ?)";
+	String sql = "INSERT INTO user ( firstName, lastName, userPassword, userEmail, joinDate, userType) VALUES (?, ?, ?, ?, ?, ?, ?)";
 try (Connection conn = DatabaseConnection.getConnection();
 		PreparedStatement pstmt = conn.prepareStatement(sql)) {
 	pstmt.setString(1, user.getUserId());
